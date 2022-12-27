@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Logical Programs!");
             Console.WriteLine("please enter below option ");
-            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:StopWatch\n6:VendingMachine\n7:DayOfWeek");
+            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:StopWatch\n6:VendingMachine\n7:DayOfWeek\n8:TemperatureConverter");
             int options = Convert.ToInt32(Console.ReadLine());
             switch (options)        //Calling different methods using switch case
             {
@@ -40,6 +40,17 @@
                     break;
                 case 7:
                     DayOfWeek.dayOfWeek();
+                    break;
+                case 8:
+                    TemperatureConverter temp = new TemperatureConverter();
+                    Console.WriteLine("Please enter the celcius temp:");
+                    double fahrenhiet = temp.celciusToFahrenhiet();
+                    Console.WriteLine("The value of celcius in fahrenhiet is {0}", fahrenhiet);
+
+                    TemperatureConverter temp1 = new TemperatureConverter();
+                    Console.WriteLine("Please enter the fahrenhiet temp:");
+                    double celcius = temp.fahrenhietToCelcius();
+                    Console.WriteLine("The value of fahrenhiet in celcius in {0}", celcius);
                     break;
                 default:
                     Console.WriteLine("Plaese choose correct option");
