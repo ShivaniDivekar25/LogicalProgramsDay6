@@ -6,25 +6,22 @@ using System.Threading.Tasks;
 
 namespace LogicalProgramDay6
 {
-    internal class PrimeNumber
+    public class PrimeNumber          //Creating class
     {
-        public static void PrimeNum(int input)
+        public static void primeNum(int input)      //Creating method
         {
-            int count = 0;
-            for (int i = 1; i <= input; i++)
+            int Count = 0;
+            for (int i = 2; i <= input / 2; i++)
             {
-                if (input % i != 0)
-                    count++;
+                if (input % i == 0)
+                {
+                    Console.WriteLine("Number is not prime");
+                    Count = 1;
+                    break;
+                }
             }
-            if (count < 2)
-            {
-                Console.WriteLine("{0} is not prime number", input);
-            }
-            else
-            {
-                Console.WriteLine("{0} is prime number", input);
-            }
-
+            if (Count == 0)
+                Console.WriteLine("The number is prime");
         }
     }
 }

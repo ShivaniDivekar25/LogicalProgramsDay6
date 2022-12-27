@@ -23,7 +23,7 @@
                 case 3:
                     Console.WriteLine("Enter input value");
                     int input = Convert.ToInt32(Console.ReadLine());
-                    PrimeNumber.PrimeNum(input);
+                    PrimeNumber.primeNum(input);
                     break;
                 default:
                     Console.WriteLine("Plaese choose correct option");
