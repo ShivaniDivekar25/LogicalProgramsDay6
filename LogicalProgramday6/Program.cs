@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Logical Programs!");
             Console.WriteLine("please enter below option ");
-            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:StopWatch\n6:VendingMachine\n7:DayOfWeek\n8:TemperatureConverter\n9:MonthlyPayment\n10:SquareRoot\n11:DecimalToBinary");
+            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:StopWatch\n6:VendingMachine\n7:DayOfWeek\n8:TemperatureConverter\n9:MonthlyPayment\n10:SquareRoot\n11:DecimalToBinary\n12:BinaryToDecimal");
             int options = Convert.ToInt32(Console.ReadLine());
             switch (options)        //Calling different methods using switch case
             {
@@ -60,6 +60,9 @@
                     break;
                 case 11:
                     DecimalToBinary.decimalToBinary();
+                    break;
+                case 12:
+                    BinaryToDecimal.binaryToDecimal();
                     break;
                 default:
                     Console.WriteLine("Plaese choose correct option");
