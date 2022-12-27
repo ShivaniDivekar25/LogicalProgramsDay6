@@ -6,9 +6,9 @@
         {
             Console.WriteLine("Welcome to Logical Programs!");
             Console.WriteLine("please enter below option ");
-            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber");
+            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber");
             int options = Convert.ToInt32(Console.ReadLine());
-            switch (options)
+            switch (options)        //Calling different methods using switch case
             {
                 case 1:
                     Console.WriteLine("Please enter input value");
@@ -24,6 +24,11 @@
                     Console.WriteLine("Enter input value");
                     int input = Convert.ToInt32(Console.ReadLine());
                     PrimeNumber.primeNum(input);
+                    break;
+                case 4:
+                    Console.WriteLine("Please enter number");
+                    int number1 = Convert.ToInt32(Console.ReadLine());
+                    ReverseNumber.reverseNumbers(number1);
                     break;
                 default:
                     Console.WriteLine("Plaese choose correct option");
