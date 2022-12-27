@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Logical Programs!");
             Console.WriteLine("please enter below option ");
-            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:StopWatch\n6:VendingMachine\n7:DayOfWeek\n8:TemperatureConverter");
+            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5:StopWatch\n6:VendingMachine\n7:DayOfWeek\n8:TemperatureConverter\n9:MonthlyPayment");
             int options = Convert.ToInt32(Console.ReadLine());
             switch (options)        //Calling different methods using switch case
             {
@@ -51,6 +51,9 @@
                     Console.WriteLine("Please enter the fahrenhiet temp:");
                     double celcius = temp.fahrenhietToCelcius();
                     Console.WriteLine("The value of fahrenhiet in celcius in {0}", celcius);
+                    break;
+                case 9:
+                    MonthlyPayment.monthlypayment();
                     break;
                 default:
                     Console.WriteLine("Plaese choose correct option");
